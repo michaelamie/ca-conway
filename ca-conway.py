@@ -43,8 +43,8 @@ try:
   screen.nodelay(True)
 
   # Values
-  rows = range(23)
-  cols = range(80)
+  rows = range(20)
+  cols = range(38)
 
   # Populate and randomize map
   map = [[False for col in cols] for row in rows]
@@ -59,11 +59,10 @@ try:
 
   # Iterate cellular automata algorithm
   iteration = 0
-  while True:
+  key = 0
+  while key != 27:
     key = screen.getch()
     # Check if ESC has been hit
-    if key == 27:
-      break
     changed = False
     for row in rows:
       for col in cols:

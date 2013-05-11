@@ -32,17 +32,17 @@ if __name__ == '__main__':
     # Values
     rows = range(23)
     cols = range(80)
-    delay = .1
+    delay = .8
 
     # Create empty grid
     grid = [[False for col in cols] for row in rows]
 
     # Populate grid with a floater
-    grid[10][10] = 1;
-    grid[10][11] = 1;
-    grid[10][9] = 1;
-    grid[9][11] = 1;
-    grid[8][10] = 1;
+    grid[10][10] = 1
+    grid[10][11] = 1
+    grid[10][9] = 1
+    grid[9][11] = 1
+    grid[8][10] = 1
 
     # Draw grid before iterations
     drawGrid(screen, grid, rows, cols)
